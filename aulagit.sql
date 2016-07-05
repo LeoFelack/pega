@@ -1,0 +1,15 @@
+CREATE DATABASE pega;
+USE pega;
+CREATE TABLE pessoas (
+   idpessoas INT NOT NULL AUTO_INCREMENT,
+   nome VARCHAR(45) NOT NULL,
+   idade INT NOT NULL,
+   CPF VARCHAR(255) NOT NULL,
+   PRIMARY KEY (idpessoas));
+CREATE TABLE produtos(
+   idProdutos INT NOT NULL AUTO_INCREMENT,
+   nome VARCHAR(45) NOT NULL,
+   tipo VARCHAR(45) NOT NULL,
+   preco INT NOT NULL,
+   PRIMARY KEY (idProdutos),
+   UNIQUE INDEX preco_UNIQUE (preco ASC));
